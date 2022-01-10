@@ -5,7 +5,6 @@ import {
 } from '@/config/app';
 import store from '../store';
 
-
 /**
  * 发送请求
  */
@@ -25,7 +24,7 @@ function baseRequest(url, method, data) {
 				if (res.data.code == '10000')
 					reslove(res.data, res);
 				else if (['90004'].indexOf(res.data.code) !== -1) {
-					store.dispatch('login');
+					// 登录过期操作
 					reject(res.data);
 				} else
 					reject(res.data.msg || '系统错误');
