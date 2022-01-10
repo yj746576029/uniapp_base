@@ -8,7 +8,7 @@ class Cache {
 		this.cacheSetHandler = uni.setStorageSync;
 		this.cacheGetHandler = uni.getStorageSync;
 		this.cacheClearHandler = uni.removeStorageSync;
-		this.cacheExpire = 'CLOUD-CITY-DIGITAL-MARKETING:TAG';
+		this.cacheExpire = 'UNI-APP:TAG';
 		this.clearOverdue();
 	}
 
