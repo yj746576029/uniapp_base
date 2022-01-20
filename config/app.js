@@ -11,6 +11,8 @@ module.exports = {
 	},
 	// 回话密钥名称 请勿修改此配置
 	TOKEN_NAME: 'Authorization',
+	// 缓存默认过期时间0为永久不过期
+	EXPIRE:0,
 	//分页最多显示条数
 	LIMIT: 10
 }

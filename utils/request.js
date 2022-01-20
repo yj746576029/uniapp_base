@@ -10,7 +10,7 @@ import store from '../store';
  */
 function baseRequest(url, method, data) {
 	let baseUrl = HTTP_REQUEST_URL,
-		header = HEADER;
+		header = {...HEADER};
 	if (store.state.app.token){
 		header[TOKEN_NAME] = store.state.app.token;
 	}

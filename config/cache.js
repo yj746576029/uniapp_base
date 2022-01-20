@@ -1,6 +1,6 @@
 module.exports = {
 	//token
-	LOGIN_STATUS: 'LOGIN_STATUS_TOKEN',
+	TOKEN: 'TOKEN',
 	//用户信息
 	USER_INFO: 'USER_INFO',
 	//token过期时间
